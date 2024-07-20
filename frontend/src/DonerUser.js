@@ -26,7 +26,7 @@ function DonerUser(){
             body: JSON.stringify(new_doner)
         };
 
-        const response = await fetch('http://localhost:5000/doner/loginDoner', requestOptions);
+        const response = await fetch('https://fullstackblooddonation.onrender.com/doner/loginDoner', requestOptions);
         const data = await response.json();
 
         if(data.message == true)
