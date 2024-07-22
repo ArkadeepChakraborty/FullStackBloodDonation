@@ -142,7 +142,7 @@ function Main(){
                 <Route exact path="/list2"  element={<Userlist/>}></Route>
                 <Route exact path="/EditDoner"  element={<BDEdit/>}></Route>
                 <Route exact path="/EditUser"  element={<BDUserEdit/>}></Route>
-                <Route exact path="/usearch"  element={<Usersearch></Usersearch>}></Route>
+                <Route exact path="/usearch"  element={<Usersearch />}></Route>
                 {/* <Route exact path="/forgetuser"  element={<UserForgetPassword />}></Route> */}
                 {/* <Route exact path="/forgetuserdoner"  element={<Donerforgetpassword />}></Route> */}
                 <Route exact path="/fuser"  element={<Fgpassword />}></Route>
