@@ -34,7 +34,7 @@ function BDEdit(){
             body: JSON.stringify(new_donor)
         };
 
-        const response = await fetch(`http://localhost:5000/doner/updateDoner/${id}`, requestOptions);
+        const response = await fetch(`https://fullstackblooddonation.onrender.com/doner/updateDoner/${id}`, requestOptions);
         const data = await response.json();
 
         if(data._id!=null)
@@ -50,7 +50,7 @@ function BDEdit(){
        
 
         const getDatabyId = async (id) =>{
-            const response = await fetch('http://localhost:5000/doner/getDonerById/'+id);
+            const response = await fetch('https://fullstackblooddonation.onrender.com/doner/getDonerById/'+id);
             const data = await response.json();
             console.log(37, data)
             setName(data.name);
