@@ -34,7 +34,7 @@ function BDUserEdit(){
             body: JSON.stringify(new_user)
         };
 
-        const response = await fetch(`http://localhost:5000/user/updateUser/${id}`, requestOptions);
+        const response = await fetch(`https://fullstackblooddonation.onrender.com/user/updateUser/${id}`, requestOptions);
         const data = await response.json();
 
         if(data._id!=null)
@@ -50,7 +50,7 @@ function BDUserEdit(){
        
 
         const getDatabyId = async (id) =>{
-            const response = await fetch('http://localhost:5000/user/getUserById/'+id);
+            const response = await fetch('https://fullstackblooddonation.onrender.com/user/getUserById/'+id);
             const data = await response.json();
             console.log(37, data)
             setName(data.name);
