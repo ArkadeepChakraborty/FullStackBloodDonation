@@ -8,7 +8,7 @@ const Donerlist = () => {
   const navigate = useNavigate(); 
 
   const getData = async () =>{
-    const response =  await fetch('http://localhost:5000/doner/getAllDoner')
+    const response =  await fetch('https://fullstackblooddonation.onrender.com/doner/getAllDoner')
     const data = await response.json()
     console.log(data)
     setAllDoners(data)
@@ -21,7 +21,7 @@ const Donerlist = () => {
     }
     else
     {
-      const response =await   fetch(`http://localhost:5000/searchbyaddress/${value}`)
+      const response =await   fetch(`https://fullstackblooddonation.onrender.com/searchbyaddress/${value}`)
       const data1 = await response.json()
       setAllDoners(data1)
     }
@@ -44,7 +44,7 @@ const DeleteDoner = async (id) =>{
                 headers: { 'Content-Type': 'application/json' },
             };
             
-            const response = await fetch('http://localhost:5000/doner/deleteDoner/'+id, requestOptions);
+            const response = await fetch('https://fullstackblooddonation.onrender.com/doner/deleteDoner/'+id, requestOptions);
                    
            
             alert("Delete Successfully")
