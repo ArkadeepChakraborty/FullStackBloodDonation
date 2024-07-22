@@ -8,7 +8,7 @@ const Userlist = () => {
   const navigate = useNavigate(); 
 
   const getData = async () =>{
-    const response =  await fetch('http://localhost:5000/user/getAllUser');
+    const response =  await fetch('https://fullstackblooddonation.onrender.com/user/getAllUser');
     const data = await response.json()
     console.log(data)
     setAllDoners(data)
@@ -21,7 +21,7 @@ const Userlist = () => {
   //   }
   //   else
   //   {
-  //     const response =await   fetch(`http://localhost:5000/user/searchbyname/${value}`);
+  //     const response =await   fetch(`https://fullstackblooddonation.onrender.com/user/searchbyname/${value}`);
   //     const data1 = await response.json()
   //     setAllDoners(data1)
   //     console.log(data1);
@@ -36,7 +36,7 @@ const Userlist = () => {
     }
     else
     {
-      const response =await   fetch(`http://localhost:5000/user/searchbyaddress/${value}`);
+      const response =await   fetch(`https://fullstackblooddonation.onrender.com/user/searchbyaddress/${value}`);
       const data1 = await response.json()
       setAllDoners(data1)
       console.log(data1);
@@ -60,7 +60,7 @@ const DeleteDoner = async (id) =>{
                 headers: { 'Content-Type': 'application/json' },
             };
             
-            const response = await fetch('http://localhost:5000/user/deleteUser/'+id, requestOptions);
+            const response = await fetch('https://fullstackblooddonation.onrender.com/user/deleteUser/'+id, requestOptions);
                    
            
             alert("Delete Successfully")
