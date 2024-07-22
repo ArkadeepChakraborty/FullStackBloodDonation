@@ -12,7 +12,7 @@ function Usersearch() {
     const navigate = useNavigate();
 
     const getData = async () => {
-        const response = await fetch('http://localhost:5000/user/getAllUser');
+        const response = await fetch('https://fullstackblooddonation.onrender.com/user/getAllUser');
         const data = await response.json();
         setAlldonors(data)
     }
@@ -40,7 +40,7 @@ function Usersearch() {
                 body: JSON.stringify(byaddressandblood)
             };
 
-            const response = await fetch('http://localhost:5000/user/searchbyboth', requestOptions)
+            const response = await fetch('https://fullstackblooddonation.onrender.com/user/searchbyboth', requestOptions)
             const data1 = await response.json();
             setAlldonors(data1)
         }
@@ -58,7 +58,7 @@ function Usersearch() {
 
         else {
 
-            const response = await fetch(`http://localhost:5000/user/searchbybloodgroup/${value}`);
+            const response = await fetch(`https://fullstackblooddonation.onrender.com/user/searchbybloodgroup/${value}`);
             const data1 = await response.json();
             setAlldonors(data1)
             console.log(data1);
