@@ -98,7 +98,7 @@ function Main(){
                     <Link className="nav-link" to="/list2">Userlist</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/usearch">Search User</Link>
+                    <Link className="nav-link" to="/Usersearch">Search User</Link>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" onClick={logout}>Logout</a>
@@ -142,7 +142,7 @@ function Main(){
                 <Route exact path="/list2"  element={<Userlist/>}></Route>
                 <Route exact path="/EditDoner"  element={<BDEdit/>}></Route>
                 <Route exact path="/EditUser"  element={<BDUserEdit/>}></Route>
-                <Route exact path="/usearch"  element={<Usersearch />}></Route>
+                <Route exact path="/Usersearch"  element={<Usersearch />}></Route>
                 {/* <Route exact path="/forgetuser"  element={<UserForgetPassword />}></Route> */}
                 {/* <Route exact path="/forgetuserdoner"  element={<Donerforgetpassword />}></Route> */}
                 <Route exact path="/fuser"  element={<Fgpassword />}></Route>
