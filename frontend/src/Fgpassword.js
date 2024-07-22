@@ -32,7 +32,7 @@ function Fgpassword(){
             body: JSON.stringify(new_user)
         };
 
-        const response = await fetch('http://localhost:5000/user/send-email/'+x, requestOptions);
+        const response = await fetch('https://fullstackblooddonation.onrender.com/user/send-email/'+x, requestOptions);
         const data = await response.json();
 
         console.log(34, data.message)
@@ -82,7 +82,7 @@ function Fgpassword(){
         };
     
         if(newpassword == cpassword){
-            const response = await fetch('http://localhost:5000/user/updateUserByEmail/' + email, requestOptions);
+            const response = await fetch('https://fullstackblooddonation.onrender.com/user/updateUserByEmail/' + email, requestOptions);
         const data = await response.json();
     
         console.log(52, data)
