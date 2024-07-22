@@ -25,7 +25,7 @@ function Donerforgetpassword(){
             body: JSON.stringify(new_user)
         };
 
-        const response = await fetch('http://localhost:5000/doner/checkEmail', requestOptions);
+        const response = await fetch('https://fullstackblooddonation.onrender.com/doner/checkEmail', requestOptions);
         const data = await response.json();
 
         if(data.length > 0)
@@ -53,7 +53,7 @@ const updatePassword = async () =>{
     };
 
     if(newpassword == cpassword){
-        const response = await fetch('http://localhost:5000/doner/updateUserByEmail/' + email, requestOptions);
+        const response = await fetch('https://fullstackblooddonation.onrender.com/doner/updateUserByEmail/' + email, requestOptions);
     const data = await response.json();
 
     console.log(52, data)
