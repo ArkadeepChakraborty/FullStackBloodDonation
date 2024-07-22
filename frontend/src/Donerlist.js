@@ -21,7 +21,7 @@ const Donerlist = () => {
     }
     else
     {
-      const response =await   fetch(`https://fullstackblooddonation.onrender.com/searchbyaddress/${value}`)
+      const response =await   fetch(`https://fullstackblooddonation.onrender.com/doner/searchbyaddress/${value}`)
       const data1 = await response.json()
       setAllDoners(data1)
     }
