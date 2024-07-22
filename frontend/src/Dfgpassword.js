@@ -32,7 +32,7 @@ function Dfgpassword(){
             body: JSON.stringify(new_doner)
         };
 
-        const response = await fetch('http://localhost:5000/doner/send-email/'+x, requestOptions);
+        const response = await fetch('https://fullstackblooddonation.onrender.com/doner/send-email/'+x, requestOptions);
         const data = await response.json();
 
         console.log(34, data.message)
@@ -82,7 +82,7 @@ function Dfgpassword(){
         };
     
         if(newpassword == cpassword){
-            const response = await fetch('http://localhost:5000/doner/updateUserByEmail/' + email, requestOptions);
+            const response = await fetch('https://fullstackblooddonation.onrender.com/doner/updateUserByEmail/' + email, requestOptions);
         const data = await response.json();
     
         console.log(52, data)
