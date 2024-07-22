@@ -34,7 +34,7 @@ function DonerUser(){
             localStorage.setItem("loggedDoner", email)
             setMessage("Login Successfully")
             //navigate to dashboard or home page
-            window.location.href = "/Usersearch"
+            window.location.href = "/usearch"
             //navigate('/usearch');
         }
         else
