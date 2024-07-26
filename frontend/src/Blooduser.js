@@ -35,8 +35,8 @@ function BloodUser(){
             localStorage.setItem("loggedUser", email)
             setMessage("Login Successfully")
             //navigate to dashboard or home page
-            window.location.href = "/search"
-            //navigate('/usearch');
+            // window.location.href = "/search"
+            navigate('/list2');
         }
         else
         {
