@@ -111,19 +111,27 @@ urouter.post('/send-email/:otp',async (req, res) => {
 
     const res1 = await User.find({email: req.body.email})
 
-    const hpass = res1[0].password
-
-    const result = await comparePassword(password, hpass)
-
-    console.log(103, result)
-
-   if(result)
+    if(res1.length > 0)
     {
-        res.send({'message': true})
+        const hpass = res1[0].password
+
+        const result = await comparePassword(password, hpass)
+    
+        console.log(103, result)
+    
+       if(result)
+        {
+            res.send({'message': true})
+        }
+        else{
+            res.send({'message': false})
+        }
     }
     else{
         res.send({'message': false})
-    }
+    }
+
+    
 
 })
 
@@ -173,6 +181,19 @@ urouter.get('/getAllUser', async(req, res) => {
         res.status(500).json({message: error.message})
     }
 })
+
+//Get all Method
+urouter.get('/getUserByEmail/:email', async(req, res) => {
+    try{
+        const email = req.params.email
+        const data = await User.find({"email" : email});
+        res.json(data)
+    }
+    catch(error){
+        res.status(500).json({message: error.message})
+    }
+})
+
 
 //Get by ID Method
 urouter.get('/getUserById/:id', async(req, res) => {
