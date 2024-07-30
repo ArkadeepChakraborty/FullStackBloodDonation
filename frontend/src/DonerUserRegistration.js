@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
 import './App.css'
 
 function DonerUserRegistration(){
@@ -11,6 +12,8 @@ function DonerUserRegistration(){
     // const [gender, setGender] = useState('')
     const[contact, setcontact] = useState('')
     const[message, setMessage] = useState('')
+
+    const navigate = useNavigate(); 
 
     const register = async () =>{
         const new_donor =  {
@@ -34,7 +37,8 @@ function DonerUserRegistration(){
         if(data._id!=null)
         {
             setMessage("Registration Successfully")
-            window.location.href = "/doner"
+            // window.location.href = "/doner"
+            navigate('/doner');
         }
         else
         {
