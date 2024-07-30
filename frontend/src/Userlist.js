@@ -7,13 +7,21 @@ const Userlist = () => {
   //const[message, setMessage] = useState('')
   const navigate = useNavigate(); 
 
+  // const getData = async () =>{
+  //   const response =  await fetch('https://fullstackblooddonation.onrender.com/user/getAllUser');
+  //   const data = await response.json()
+  //   console.log(data)
+  //   setAllDoners(data)
+  // }
+
   const getData = async () =>{
-    const response =  await fetch('https://fullstackblooddonation.onrender.com/user/getAllUser');
+    const email = localStorage.getItem('loggedUser')
+    const response =  await fetch('https://fullstackblooddonation.onrender.com/user/getUserByEmail/'+email)
     const data = await response.json()
     console.log(data)
     setAllDoners(data)
   }
-
+  
   // const search = async(value) =>{
   //   if(value == null || value == "")
   //   {
