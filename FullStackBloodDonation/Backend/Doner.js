@@ -98,7 +98,8 @@ drouter.post('/loginDoner', async (req, res) => {
 
     const res1 = await Doner.find({email: req.body.email})
 
-    const hpass = res1[0].password
+    if(res1.length > 0){
+        const hpass = res1[0].password
 
     const result = await comparePassword(password, hpass)
 
@@ -111,6 +112,12 @@ drouter.post('/loginDoner', async (req, res) => {
     else{
         res.send({'message': false})
     }
+    }
+    else{
+        res.send({'message': false})
+    }
+
+    
 
 })
 
@@ -153,6 +160,18 @@ drouter.post('/registerDoner', async (req, res) => {
 drouter.get('/getAllDoner', async(req, res) => {
     try{
         const data = await Doner.find();
+        res.json(data)
+    }
+    catch(error){
+        res.status(500).json({message: error.message})
+    }
+})
+
+//Get all Method
+drouter.get('/getDonerByEmail/:email', async(req, res) => {
+    try{
+        const email = req.params.email
+        const data = await Doner.find({"email" : email});
         res.json(data)
     }
     catch(error){
