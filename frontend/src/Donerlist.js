@@ -7,13 +7,22 @@ const Donerlist = () => {
   //const[message, setMessage] = useState('')
   const navigate = useNavigate(); 
 
+  // const getData = async () =>{
+  //   const response =  await fetch('https://fullstackblooddonation.onrender.com/doner/getAllDoner')
+  //   const data = await response.json()
+  //   console.log(data)
+  //   setAllDoners(data)
+  // }
+
+
   const getData = async () =>{
-    const response =  await fetch('https://fullstackblooddonation.onrender.com/doner/getAllDoner')
+    const email = localStorage.getItem('loggedDoner')
+    const response =  await fetch('https://fullstackblooddonation.onrender.com/doner/getDonerByEmail/'+email)
     const data = await response.json()
     console.log(data)
     setAllDoners(data)
   }
-
+  
   const search = async(value) =>{
     if(value == null || value == "")
     {
