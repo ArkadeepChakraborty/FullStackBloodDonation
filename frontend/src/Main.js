@@ -69,22 +69,6 @@ function Main(){
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto">
-                {/* <li className="nav-item active">
-                    <Link className="nav-link" to="/home">Home</Link>
-                </li>
-                
-                <li className="nav-item">
-                    <Link className="nav-link" to="/search">Search Doner</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/list">Donerlist</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/list2">Userlist</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to="/usearch">Search User</Link>
-                </li> */}
                 {
                     flag == 1 ?
                     <>
