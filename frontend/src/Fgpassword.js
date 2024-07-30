@@ -1,6 +1,7 @@
 import { useState } from "react"
 import './App.css'
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 function Fgpassword(){
 
@@ -18,6 +19,8 @@ function Fgpassword(){
     const [flago, setFlago] = useState(0);
     const [flaga, setFlaga] = useState(0);
     const [flagc, setFlagc] = useState(0);
+
+    const navigate = useNavigate(); 
 
     const validateEmail = async () =>{
         const x = Math.floor(Math.random() * (999999 - 100000 + 1) + 100000)
@@ -88,7 +91,8 @@ function Fgpassword(){
         console.log(52, data)
         if (data._id != null) {
             setMessage("Password Updated Successfully")
-            window.location.href = "/user"
+            // window.location.href = "/user"
+            navigate('/user');
     
         }
         else {
