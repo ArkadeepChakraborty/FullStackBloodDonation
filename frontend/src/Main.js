@@ -91,7 +91,7 @@ function Main(){
                     :
                     <>
                         <li className="nav-item active">
-                          <Link className="nav-link" to="/home">Home</Link>
+                          <Link className="nav-link" to="/">Home</Link>
                          </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/user">User</Link>
