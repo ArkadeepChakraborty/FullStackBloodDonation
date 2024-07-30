@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
 import './App.css'
 
 function BloodyUserRegistration(){
@@ -12,6 +13,7 @@ function BloodyUserRegistration(){
     const[contact, setcontact] = useState('')
     const[message, setMessage] = useState('')
 
+    const navigate = useNavigate(); 
     const register = async () =>{
         const new_user =  {
             "name": name,
@@ -34,7 +36,8 @@ function BloodyUserRegistration(){
         if(data._id!=null)
         {
             setMessage("Registration Successfully")
-            window.location.href = "/user"
+            // window.location.href = "/user"
+            navigate('/user');
         }
         else
         {
