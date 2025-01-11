@@ -1,0 +1,133 @@
+/* Users List Styling */
+.UsersList {
+  max-width: 1000px; /* Ensure the table width matches the image */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Updated to pure white for a cleaner look */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 170px;
+  margin-top: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #3c3c3c;
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center; /* Center search bar for better alignment */
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px; /* Adjusted for better responsiveness */
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border 0.3s ease;
+  background-color: #f9f9f9; /* Light gray background for input */
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add subtle focus glow */
+  outline: none;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow: hidden;
+  font-size: 1rem; /* Consistent font size */
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: center; /* Center align text in all cells */
+  border: 1px solid #ddd; /* Subtle border for cleaner rows */
+}
+
+.table th {
+  background-color: #007bff; /* Updated to bright blue for header */
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f8f9fa; /* Alternating row colors for clarity */
+}
+
+.table tr:hover {
+  background-color: #e9ecef; /* Slightly darker hover effect */
+}
+
+.table td {
+  background-color: #ffffff; /* Ensure consistent white background for cells */
+  color: #333;
+}
+
+.table td:first-child {
+  width: 50px; /* Narrow width for the serial number column */
+}
+
+.table td:last-child {
+  width: 150px; /* Fixed width for action buttons column */
+}
+
+.table td button {
+  padding: 8px 12px;
+  margin-right: 5px; /* Compact spacing between buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem; /* Slightly smaller font for buttons */
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #28a745; /* Bright green for edit */
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #218838; /* Slightly darker hover effect */
+}
+
+.delete-btn {
+  background-color: #154bed; /* Bright red for delete */
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #876de6; /* Slightly darker hover effect */
+}
+
+/* No data message styling */
+.table td[colspan="4"] {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+      padding: 10px; /* Reduce padding for small screens */
+  }
+
+  .search-input {
+      width: 100%;
+      max-width: 300px; /* Adjust input size */
+  }
+}

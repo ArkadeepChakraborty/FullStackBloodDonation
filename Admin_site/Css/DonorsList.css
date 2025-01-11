@@ -1,0 +1,96 @@
+/* DonorsList.css */
+.donors-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f7fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+
+  .donors-container{
+    margin-top: 0px;
+    margin-right: 200px;
+  }
+  
+  .donors-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 12px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+  }
+  
+  .donors-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .donors-table th,
+  .donors-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .donors-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .donors-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .donors-table button {
+    padding: 6px 12px; /* Reduced padding */
+    font-size: 14px;   /* Smaller font size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px; /* Slightly reduced margin */
+}
+
+.edit-button {
+    background-color: #560ef4;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+.delete-button {
+    background-color: #b7dc23;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #161616;
+}
+  .no-donors {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+  }
+  

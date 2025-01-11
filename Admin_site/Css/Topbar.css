@@ -1,0 +1,35 @@
+.brand-container {
+    text-align: center;
+    margin-left: 20px; /* Adjust as needed */
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .brand-title {
+    font-size: 1.2rem;
+    color: #0066cc; /* Adjust the color as desired */
+    margin: 0;
+  }
+  .dropdown-item {
+    display: flex;
+    align-items: center; /* Vertically centers all content */
+    gap: 8px; /* Space between the icon and text */
+    padding: 8px 12px; /* Adjust padding for better spacing */
+  }
+  
+  .dropdown-item i {
+    line-height: 1; /* Ensures the icon aligns correctly */
+    font-size: 1rem; /* Adjust icon size if needed */
+  }
+  
+  .dropdown-item p {
+    margin: 0; /* Remove default paragraph margin */
+    font-size: 14px; /* Consistent font size */
+  }
+  
+  

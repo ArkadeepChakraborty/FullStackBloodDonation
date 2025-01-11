@@ -1,0 +1,105 @@
+.main-content {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .account {
+    display: flex;
+    align-items: center;
+}
+
+.header .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.card p {
+    margin: 10px 0;
+    color: #777;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.card.blue {
+    border-top: 4px solid #3498db;
+}
+
+.card.green {
+    border-top: 4px solid #2ecc71;
+}
+
+.card.light-blue {
+    border-top: 4px solid #1abc9c;
+}
+
+.card.sky-blue {
+    border-top: 4px solid #00bcd4;
+}
+
+.chart-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+/* Custom Toast Styling */
+  
+  .Toastify__toast-body {
+    margin-top: 2px;
+    margin-right: 30px; /* Add space between text and cross button */
+  }
+  .Toastify__close-button {
+    background: none;
+    border: none;
+    cursor: pointer; /* Optionally keep or remove */
+  }
+  
+  .Toastify__close-button:hover {
+    background: none; /* Remove any hover background */
+    color: inherit; /* Prevent color changes on hover */
+    cursor: default; /* Ensure no pointer change if desired */
+  }
+  

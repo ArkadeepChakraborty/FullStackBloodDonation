@@ -1,0 +1,85 @@
+Slider Section Styles
+.slider {
+    position: relative;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(17, 17, 17, 0.1);
+  }
+  
+  .carousel-inner img {
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow for a more modern look */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+  .carousel-inner img:hover {
+    transform: scale(1.05); /* Hover zoom-in effect */
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.881); /* Intense shadow on hover */
+  }
+  
+  /* Buttons for Slider Navigation */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    filter: invert(1); /* Makes buttons visible on any background */
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    transform: scale(1.2); /* Slight hover effect for navigation buttons */
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+    opacity: 0.8; /* Slightly transparent buttons for a modern look */
+  }
+  
+  /* Section Content Styles */
+  .container .row {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 10px;
+   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for floating effect */
+  }
+  
+  .container .row h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .container .row p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .container .row button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .container .row button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Adds a slight hover zoom effect */
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  

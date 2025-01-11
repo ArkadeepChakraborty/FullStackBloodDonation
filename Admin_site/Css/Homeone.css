@@ -1,0 +1,116 @@
+/* Dashboard Styling */
+.Dashboard {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f7fb; /* Soft light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 0px;
+  }
+
+  
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem; /* Added top margin for better spacing */
+    color: #1a202c;
+    font-weight: bold;
+  }
+  
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 2.5rem;
+  }
+  
+  .stat-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stat-card h3 {
+    font-size: 1.8rem;
+    color: #0066cc;
+    margin-bottom: 10px;
+  }
+  
+  .stat-card p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .loading-text {
+    font-size: 1.2rem;
+    color: #777;
+    font-style: italic;
+  }
+
+  .chart-container {
+    background: #ffffff;
+    padding: 1rem;
+    margin: 1.5rem auto 2rem; /* Space between charts */
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 900px; /* Wider chart */
+    height: 400px; /* Increased height */
+  }
+  
+  .chart-container canvas {
+    display: block;
+    margin: 0 auto;
+    height: 350px !important; /* Fixed height for better visibility */
+  }
+
+.chart-container:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Bar Chart and Pie Chart Styling */
+canvas {
+  max-height: 350px; /* Set a fixed height for charts */
+  margin: 0 auto; /* Center charts */
+}
+
+/* Dashboard Layout */
+.Dashboard {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chart-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  canvas {
+    max-height: 300px; /* Adjust chart size for smaller screens */
+  }
+}
+
+  
