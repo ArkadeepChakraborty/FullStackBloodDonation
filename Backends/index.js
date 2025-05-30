@@ -11,7 +11,7 @@ app.use(cors({
 }))
 
 // const Doner = require('./Doner')
-const mongodburl = 'mongodb+srv://arkadeep2003:passwordmongodb@cluster0.05ejbft.mongodb.net/'
+const mongodburl = 'YOUR MONGODB URL'
 
 mongoose.connect(mongodburl);
 const database = mongoose.connection;
