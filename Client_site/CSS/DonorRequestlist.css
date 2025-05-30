@@ -1,0 +1,27 @@
+.table td button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Slightly smaller font for buttons */
+    transition: background-color 0.3s ease;
+}
+
+.it-btn {
+    background-color: #28a745; /* Bright green for accept */
+    color: white;
+}
+
+.it-btn:hover {
+    background-color: #218838; /* Slightly darker hover effect */
+}
+
+.ete-btn {
+    background-color: #154bed; /* Bright blue for reject */
+    color: white;
+    margin-left: 10px; /* Reset margin-right for the last button */
+}
+
+.ete-btn:hover {
+    background-color: #876de6; /* Slightly darker hover effect */
+}

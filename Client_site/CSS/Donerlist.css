@@ -1,0 +1,142 @@
+.donerlist-container {
+  padding: 20px;
+}
+
+.donerlist-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: 90px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.donerlist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.doner-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  padding: 20px;
+  width: 360px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.doner-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-photo-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.photo-upload-label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #6f2ef1;
+  object-fit: cover;
+}
+
+.edit-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.doner-card p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.doner-card p strong {
+  color: #6f2ef1;
+}
+
+.action-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-btno,
+.delete-btno {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-btno {
+  background-color: #6f2ef1;
+  color: white;
+}
+
+.delete-btno {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.edit-btno:hover {
+  background-color: #5425d3;
+}
+
+.delete-btno:hover {
+  background-color: #d62c2c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .donerlist-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doner-card {
+    width: 90%;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+}
